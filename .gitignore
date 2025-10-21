@@ -1,0 +1,144 @@
+adapter
+adapters
+outputs
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info
+*.egg-info/**
+# Distribution / Installation
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+prompt_run_*
+MANIFEST
+.ropeproject
+.ropeproject/**
+# PyInstaller
+#  Usually these files are written by a parent folder of pyproject.toml,
+#  but in case your project builds executable files from this directory
+*.manifest
+*.spec
+wandb
+wandb/**
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Project-specific Output & Logs
+/outputs/
+/eval_outputs/
+/wandb/
+/data/dummy_*.jsonl # Ignore dummy data files
+/models/mock_model/ # Ignore mock model files
+*.log
+*.csv
+*.jsonl
+
+# Checkpoints & Saved Models
+# (It's often good practice to ignore large model files from git)
+/checkpoints/
+/model_dir/
+*.safetensors
+*.gguf
+*.npz
+wandb
+wandb/*
+*.json
+*.jsonl
+
+# IDE settings
+.idea/
+.vscode/
+*.swp
+*~
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Testing & Development Files
+.mypy_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+test_cli_comprehensive.py
+CLI_USAGE_GUIDE.md
+*_test_output.txt
+*_debug.log
+test_*.py.bak
+*.test.py
+
+# Temporary & Backup Files
+*.tmp
+*.temp
+*.bak
+*.backup
+*~
+.#*
+\#*#
+*.orig
+*.rej
+*.swp
+*.swo
+
+# Development & Debug Outputs
+debug_*.txt
+profile_*.txt
+benchmark_*.txt
+memory_profile_*.txt
+performance_*.log
+trace_*.log
+
+# MLX & Model Specific
+*.mlx
+*.mlmodel
+*.coreml
+*.onnx
+*.pb
+*.pth
+*.pt
+*.bin
+model_cache/
+tokenizer_cache/
+
+# Experiment & Training Outputs
+experiments/
+training_logs/
+evaluation_results/
+generated_samples/
+*.metrics.json
+*.results.json
+training_*.log
+eval_*.log
+
+# System & Editor Files
+.vscode/settings.json
+.vscode/launch.json
+.idea/workspace.xml
+.idea/tasks.xml
+*.sublime-project
+*.sublime-workspace

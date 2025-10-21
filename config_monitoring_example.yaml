@@ -1,0 +1,69 @@
+# Example configuration with enhanced monitoring
+# MLX RL Trainer - Monitoring Configuration
+
+# Training configuration
+trainer:
+  algorithm: grpo
+  num_training_steps: 10000
+  learning_rate: 2.0e-6
+  ppo_batch_size: 1
+  num_rollout_samples: 2
+
+  # Memory management
+  log_memory_usage: true
+  memory_safety_threshold_mb: 8000
+
+  # Statistics
+  reward_smoothing_window: 10
+
+# Monitoring configuration
+monitoring:
+  # WandB
+  use_wandb: true
+  wandb_project: "mlx-rl-trainer-enhanced"
+  wandb_entity: "your-username"
+  wandb_run_name: "experiment-001"
+
+  # Logging frequency
+  log_samples_every: 5
+  max_logged_samples: 20
+  log_prompts: true
+
+  # Chart generation
+  generate_charts_every: 100
+  generate_at_checkpoints: true
+
+# Checkpoint configuration
+checkpointing:
+  save_dir: "./checkpoints"
+  save_every: 100
+  keep_last_n: 3
+
+# Model configuration
+model:
+  model_path: "./models/qwen-2.5-0.5b-instruct"
+  use_lora: true
+  lora_rank: 8
+
+# Data configuration
+data:
+  train_path: "./data/train.jsonl"
+  val_path: "./data/val.jsonl"
+  max_prompt_len: 350
+  max_gen_len: 96
+
+# Reward configuration
+rewards:
+  - name: format_structure
+    weight: 0.3
+    config: {}
+
+  - name: semantic_similarity
+    weight: 0.4
+    config:
+      method: tfidf
+
+  - name: mcq_accuracy
+    weight: 0.3
+    config:
+      strict_matching: true

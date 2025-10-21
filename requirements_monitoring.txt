@@ -1,0 +1,24 @@
+# Enhanced Monitoring System Requirements
+# MLX RL Trainer - Monitoring Module
+
+# Core dependencies
+numpy>=1.24.0
+pandas>=2.0.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Monitoring
+wandb>=0.15.0
+
+# System monitoring
+psutil>=5.9.0
+
+# MLX (required)
+mlx>=0.5.0
+mlx-lm>=0.10.0
+
+# Optional but recommended
+scipy>=1.10.0  # For advanced statistics
+pillow>=9.5.0  # For image processing
