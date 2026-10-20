@@ -692,3 +692,5 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.# mlx-grpo-trainer
+
+<img src="https://www.google-analytics.com/g/collect?v=2&amp;tid=G-RKFB16BPXJ&amp;cid=555.mlx-grpo-trainer&amp;en=page_view&amp;dl=https%3A%2F%2Fgithub.com%2Fadeelahmad%2Fmlx-grpo-trainer&amp;dt=mlx-grpo-trainer&amp;ep.repo=mlx-grpo-trainer" width="1" height="1" alt="">
